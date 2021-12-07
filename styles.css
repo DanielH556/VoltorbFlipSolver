@@ -1,0 +1,91 @@
+body {
+  background-color: #27643f;
+}
+
+#general-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: left;
+  width: 500px;
+  background-color: #27643f;
+}
+
+#board {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 420px;
+}
+
+#right-buttons-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 70px;
+  height: 330px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.label-ref {
+  width: 22px;
+  vertical-align: middle;
+}
+
+#bottom-buttons-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  width: 420px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #d6a185; */
+  background-color: #113d23;
+  margin: 5px; 
+  width: 70px; 
+  height: 55px;
+  border-radius: 10px;
+}
+
+.card > img {
+  width: auto;
+  height: 50px;
+}
+
+/*.refer-bars{
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 70px;
+  height: 4.5em;
+}*/
+
+.refer-bars-button  {
+  background-color: yellow;
+  align-items: flex-end;
+  width: 65px;
+  height: 3.5em;
+  text-align: center;  
+  border-radius: 10px;
+  margin: 2px;
+}
+
+input {
+  width: 30px;
+}

@@ -23,13 +23,22 @@ body {
   width: 420px;
 }
 
+#bottomBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto;
+  width: 420px;
+}
+
 #right-buttons-container {
   display: flex;
   align-items: center;
   align-content: center;
   flex-direction: column;
   width: 70px;
-  height: 330px;
+  height: 65px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -43,9 +52,10 @@ body {
   align-items: center;
   align-content: center;
   flex-direction: row;
-  width: 420px;
+  width: 70px;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: auto;
 }
 
 .card {

@@ -1,5 +1,5 @@
 var app = angular.module("voltorbFlipGame", []);
-
+//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 app.controller("TableCtrl", function($scope) {
   $scope.cards = [
     // Contagem de row e column feita de cima para baixo, da esquerda para a direita.

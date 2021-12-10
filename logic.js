@@ -30,7 +30,7 @@ function flipCard(cardId, cardIcon, cardValue) {
     flippedCard.innerHTML = `<img src="${cardIcon}" name="card-image-${cardId}"/>`;
   };
 };
-
+// fsdklafjlkasdfjklçadsjflçasjfajsldkçfjasklfjalsçfkla
 app.controller('TableCtrl', function($scope) {
   $scope.flips = function (cardId) {
     $scope.sangular.getElementById(`card-5`).style.backgroundColor = "#d6a185";

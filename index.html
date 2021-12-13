@@ -11,29 +11,17 @@
 <body>
   <div id="general-container" ng-app="voltorbFlipGame">
     <div id="board" ng-controller="TableCtrl">
-      <div ng-repeat="x in cards">
-        <span ng-click="flips($index)"><button class="card" id="card-{{x.id}}"></button></span>
-      </div>
+      <div ng-repeat="x in cards"></div>
     </div>
-    <div id="rightBar" ng-controller="BorderCtrl">
-      <div id="right-buttons-container" ng-repeat="x in labels">
-        <div class="refer-bars-button">
-          <input type="number" name="sum-{{x.id}}" id="right-sum-card-{{x.id}}" ng-value={{x.sum}} min="0"> <b class="label-ref">S</b>
-          <input type="number" name="sum-{{x.id}}" id="right-voltorb-card-{{x.id}}" ng-value={{x.voltorb}} min="0" max="5"><img src="Voltorb.png" alt="LabelVoltorb" class="label-ref">
-        </div>
-      </div>
+    <div id="rightBar">
+      <div id="right-buttons-container" ng-repeat="x in labels"></div>
     </div>
-    <div id="bottomBar" ng-controller="BorderCtrl">
-      <div id="bottom-buttons-container" ng-repeat="x in labels">
-        <div class="refer-bars-button">
-          <input type="number" name="sum-{{x.id}}" id="bottom-sum-card-{{x.id}}" ng-value={{x.sum}} min="0"> <b class="label-ref">S</b>
-          <input type="number" name="sum-{{x.id}}" id="bottom-voltorb-card-{{x.id}}" ng-value={{x.voltorb}} min="0" max="5"><img src="Voltorb.png" alt="LabelVoltorb" class="label-ref">
-        </div>
-      </div>
+    <div id="bottomBar">
+      <div id="bottom-buttons-container" ng-repeat="x in labels"></div>
     </div>
   </div>
   <script src="logic.js"></script>
-  <script src="events.js"></script>
+  <script src="controllers.js"></script>
   <script src="generation.js"></script>
 </body>
 </html>

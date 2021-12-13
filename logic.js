@@ -1,5 +1,3 @@
-var app = angular.module("voltorbFlipGame", []);
-
 var rowTotal = 0;
 var columnTotal = 0;
 
@@ -17,25 +15,22 @@ function sumColumn(cards) {
   console.log(columnTotal);
 };
 
-function flipCard(cardId, cardIcon, cardValue) {
-  var flippedCard = document.getElementById(`card-4`);
-  flippedCard.style.backgroundColor = "#d6a185";
-  if (cardValue == 1) {
-    flippedCard.innerHTML = `<h2>${cardValue}</h2>`;
-  }else if (cardValue == 2) {
-    flippedCard.innerHTML = `<h2>${cardValue}</h2>`;
-  }else if (cardValue == 3) {
-    flippedCard.innerHTML = `<h2>${cardValue}</h2>`;
-  }else if (cardValue == 0) {
-    flippedCard.innerHTML = `<img src="${cardIcon}" name="card-image-${cardId}"/>`;
-  };
-};
+// function flipCard(cardId, cardIcon, cardValue) {
+//   var flippedCard = document.getElementById(`card-${cardId}`);
+//   console.log(flippedCard);
+//   flippedCard.style.backgroundColor = "#d6a185";
+//   if (cardValue == 1) {
+//     flippedCard.innerHTML = `<h2>${cardValue}</h2>`;
+//   }else if (cardValue == 2) {
+//     flippedCard.innerHTML = `<h2>${cardValue}</h2>`;
+//   }else if (cardValue == 3) {
+//     flippedCard.innerHTML = `<h2>${cardValue}</h2>`;
+//   }else if (cardValue == 0) {
+//     flippedCard.innerHTML = `<img src="${cardIcon}" name="card-image-${cardId}"/>`;
+//   };
+// };
 
-app.controller('TableCtrl', function($scope) {
-  $scope.flips = function (cardId) {
-    $scope.sangular.getElementById(`card-5`).style.backgroundColor = "#d6a185";
-  }
-})
+
 
 function checkLine(voltorb, sum, memoLine) {
   switch(memoLine) {

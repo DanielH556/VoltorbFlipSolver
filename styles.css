@@ -76,16 +76,6 @@ body {
   height: 50px;
 }
 
-/*.refer-bars{
-  background-color: green;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 70px;
-  height: 4.5em;
-}*/
-
 .refer-bars-button  {
   background-color: yellow;
   align-items: flex-end;

@@ -2,7 +2,7 @@ var app = angular.module("voltorbFlipGame", []);
 // A
 app.controller('TableCtrl', ['$scope', function($scope) {
   $scope.flipCard = function(cardId, cardState, cardValue) {
-    var cardIcon = 'Voltorb.png'
+    var cardIcon = '../views/medias/Voltorb.png'
 
     if (cardState == 0) {
       document.getElementById(`card-${cardId}`).style.backgroundColor = '#d6a185';
